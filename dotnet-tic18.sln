@@ -5,6 +5,12 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P001", "P001\P001.csproj", "{B3FFE387-7B85-4871-9D6F-18BDA8089347}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P002", "P002\P002.csproj", "{5894BD77-01FE-4A79-BEF6-7765D510495E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExemplosSala", "ExemplosSala", "{8F7539DE-02C1-433B-B521-B17A8DF8F4B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstruturasDeControle", "ExemplosSala\EstruturasDeControle\EstruturasDeControle.csproj", "{422A5DF0-C292-4F70-A8DA-B4651046A2E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +21,22 @@ Global
 		{B3FFE387-7B85-4871-9D6F-18BDA8089347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3FFE387-7B85-4871-9D6F-18BDA8089347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3FFE387-7B85-4871-9D6F-18BDA8089347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5894BD77-01FE-4A79-BEF6-7765D510495E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5894BD77-01FE-4A79-BEF6-7765D510495E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5894BD77-01FE-4A79-BEF6-7765D510495E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5894BD77-01FE-4A79-BEF6-7765D510495E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422A5DF0-C292-4F70-A8DA-B4651046A2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422A5DF0-C292-4F70-A8DA-B4651046A2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422A5DF0-C292-4F70-A8DA-B4651046A2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422A5DF0-C292-4F70-A8DA-B4651046A2E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F73EEC5-B599-4CB6-BED6-C25495E6FF30}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{422A5DF0-C292-4F70-A8DA-B4651046A2E8} = {8F7539DE-02C1-433B-B521-B17A8DF8F4B5}
 	EndGlobalSection
 EndGlobal

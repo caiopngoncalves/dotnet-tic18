@@ -9,6 +9,7 @@ namespace P002.Class
     {
         private List<Tarefa> Tarefas = new List<Tarefa>();
 
+
         private void Criar()
         {
             System.Console.WriteLine("Digite um título: ");
@@ -87,12 +88,63 @@ namespace P002.Class
         }
         private void Pesquisar()
         {
+            Console.WriteLine("Digite uma palavra-chave para pesquisar:");
+            string palavraChave = Console.ReadLine().ToLower();
 
+            Console.WriteLine($"Resultados da pesquisa para '{palavraChave}':");
+            bool encontrouResultados = false;
+
+            foreach (Tarefa t in this.Tarefas)
+            {
+                if (t.Titulo.ToLower().Contains(palavraChave) || t.Descrição.ToLower().Contains(palavraChave))
+                {
+                    t.Print();
+                    encontrouResultados = true;
+                }
+            }
+
+            if (!encontrouResultados)
+            {
+                Console.WriteLine("Nenhum resultado encontrado para a palavra-chave fornecida.");
+            }
         }
         private void Estatisticas()
         {
+            int concluidas = 0;
+            int naoConcluidas = 0;
+            DateTime tarefaMaisAntiga = DateTime.MaxValue;
+            DateTime tarefaMaisRecente = DateTime.MinValue;
+
+            foreach (Tarefa t in this.Tarefas)
+            {
+                if (t.Conclusao)
+                {
+                    concluidas++;
+                }
+                else
+                {
+                    naoConcluidas++;
+                }
+
+                if (t.DataVenc < tarefaMaisAntiga)
+                {
+                    tarefaMaisAntiga = t.DataVenc;
+                }
+
+                if (t.DataVenc > tarefaMaisRecente)
+                {
+                    tarefaMaisRecente = t.DataVenc;
+                }
+            }
+
+            Console.WriteLine($"Total de tarefas: {this.Tarefas.Count}");
+            Console.WriteLine($"Tarefas concluídas: {concluidas}");
+            Console.WriteLine($"Tarefas não concluídas: {naoConcluidas}");
+            Console.WriteLine($"Tarefa mais antiga: {tarefaMaisAntiga}");
+            Console.WriteLine($"Tarefa mais recente: {tarefaMaisRecente}");
 
         }
+
         public void Menu()
         {
             while (true)

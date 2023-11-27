@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExemplosSala", "ExemplosSal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstruturasDeControle", "ExemplosSala\EstruturasDeControle\EstruturasDeControle.csproj", "{422A5DF0-C292-4F70-A8DA-B4651046A2E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P003", "P003\P003.csproj", "{EE25DD1C-74D3-4768-A495-8C05B2B047D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{422A5DF0-C292-4F70-A8DA-B4651046A2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{422A5DF0-C292-4F70-A8DA-B4651046A2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{422A5DF0-C292-4F70-A8DA-B4651046A2E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE25DD1C-74D3-4768-A495-8C05B2B047D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE25DD1C-74D3-4768-A495-8C05B2B047D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE25DD1C-74D3-4768-A495-8C05B2B047D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE25DD1C-74D3-4768-A495-8C05B2B047D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
